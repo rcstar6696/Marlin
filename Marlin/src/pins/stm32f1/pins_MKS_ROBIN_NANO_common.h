@@ -103,7 +103,7 @@
 // Heaters / Fans
 //
 #ifndef HEATER_0_PIN
-  #define HEATER_0_PIN                      PC3
+  #define HEATER_0_PIN                      PB0
 #endif
 #ifndef FAN0_PIN
   #define FAN0_PIN                          PB1   // FAN
@@ -117,7 +117,7 @@
     #define FAN1_PIN                        PB0
   #endif
 #elif !defined(HEATER_1_PIN)
-  #define HEATER_1_PIN                      PB0
+  #define HEATER_1_PIN                      PC3
 #endif
 
 //
