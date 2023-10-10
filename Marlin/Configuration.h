@@ -695,9 +695,9 @@
     #define DEFAULT_Kd_LIST { 49.50, 49.50 }
   #else
     // Sapphire S/Pro/Plus
-    #define DEFAULT_Kp 12.02
-    #define DEFAULT_Ki  0.75
-    #define DEFAULT_Kd 49.50
+    #define DEFAULT_Kp 14.5
+    #define DEFAULT_Ki  0.81
+    #define DEFAULT_Kd 64.7
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -784,9 +784,9 @@
   //#define PID_BED_DEBUG // Print Bed PID debug data to the serial port.
 
   // Sapphire Plus
-  #define DEFAULT_bedKp 55.05
-  #define DEFAULT_bedKi 9.36
-  #define DEFAULT_bedKd 215.7
+  #define DEFAULT_bedKp 41.1
+  #define DEFAULT_bedKi 8.03
+  #define DEFAULT_bedKd 140.3
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #else
@@ -1253,7 +1253,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 1600, 700}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.82, 79.72, 1604.01, 696.28}
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
