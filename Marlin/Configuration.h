@@ -3453,22 +3453,22 @@
   //#define DISABLE_ENCODER         // Disable the click encoder, if any
   //#define TOUCH_IDLE_SLEEP_MINS 5 // (minutes) Display Sleep after a period of inactivity. Set with M255 S.
 
+  #define TOUCH_SCREEN_CALIBRATION_PRECISION 60
   #define TOUCH_SCREEN_CALIBRATION
-  #define DEBUG_TOUCH_CALIBRATION
 
-//#define TOUCH_CALIBRATION_X 12316
-//#define TOUCH_CALIBRATION_Y -8981
-//#define TOUCH_OFFSET_X        -43
-//#define TOUCH_OFFSET_Y        257
-//#define TOUCH_ORIENTATION TOUCH_LANDSCAPE
+  //#define TOUCH_CALIBRATION_X 12316
+  //#define TOUCH_CALIBRATION_Y -8981
+  //#define TOUCH_OFFSET_X        -43
+  //#define TOUCH_OFFSET_Y        257
+  //#define TOUCH_ORIENTATION TOUCH_LANDSCAPE
 
-#if ALL(TOUCH_SCREEN_CALIBRATION, EEPROM_SETTINGS)
-#define TOUCH_CALIBRATION_AUTO_SAVE // Auto save successful calibration values to EEPROM
-#endif
+  #if ALL(TOUCH_SCREEN_CALIBRATION, EEPROM_SETTINGS)
+    #define TOUCH_CALIBRATION_AUTO_SAVE // Auto save successful calibration values to EEPROM
+  #endif
 
-#if ENABLED(TFT_COLOR_UI)
-#define SINGLE_TOUCH_NAVIGATION
-#endif
+  #if ENABLED(TFT_COLOR_UI)
+    #define SINGLE_TOUCH_NAVIGATION
+  #endif
 #endif
 
 //
